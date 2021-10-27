@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="options">
+            <div class="quantity">
+                <label for="">Quantity</label>
+                <input type="number" id="quantity" value="10">
+            </div>
+            <div id="color" class="color">
+                <div id="colored" class="color-one selected">Blue</div>
+                <div id="white" class="color-one">White</div>
+            </div>
+            <div id="quality-of-fabric" class="quality-of-fabric">
+                <div id="high" class="quality-one selected">High</div>
+                <div id="low" class="quality-one">Low</div>
+            </div>
+            <select name="style" id="style">
+                <option value="printed">Printed</option>
+                <option value="plain">Plain</option>
+            </select>
+        </div>
+        <hr>
+        <div class="container-product">
+            <div class="image-product"><img id="imageProduct" src="images/blue.jpg"></div>
+            <div class="information-product">
+                <h4>Order details</h4>
+                <p>Product: <span id="result-product"></span> </p>
+                <p>Style:<span id="result-style"></span> </p>
+                <p>Quality: <span id="result-quality"></span></p>
+                <p>Color: <span id="result-color"></span></p>
+                <p>Quantity: <span id="result-quantity"></span></p>
+                <p>Total: <span id="result-total"></span></p>
+                
+                <input class="order-btn" type="button" value="Complete order">
+            </div>
+            
+        </div>
+    </div>
+
+   
+    <script src="file.js"></script>
+</body>
+</html>
